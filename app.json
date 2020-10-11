@@ -1,0 +1,12 @@
+{
+  "name": "Nihongo",
+  "displayName": "Nihongo",
+  "expo": {
+    "name": "Nihongo",
+    "slug": "Nihongo",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
