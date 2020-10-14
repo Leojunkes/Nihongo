@@ -3,9 +3,9 @@
 ## Preview
 
 <p align="center">
-   <img src="./imagens/imgReadme/tela_nihongo.png" alt="Nihongo" width="200"/>
-    <img src="./imagens/imgReadme/tela_nihongo3.png" alt="Nihongo" width="200"/>
-     <img src="./imagens/imgReadme/tela_nihongo4.png" alt="Nihongo" width="200"/>
+   <img src="./src/imagens/imgReadme/tela_nihongo.png" alt="Nihongo" width="200"/>
+    <img src="./src/imagens/imgReadme/tela_nihongo3.png" alt="Nihongo" width="200"/>
+     <img src="./src/imagens/imgReadme/tela_nihongo4.png" alt="Nihongo" width="200"/>
 
 </p>
 
