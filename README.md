@@ -16,9 +16,9 @@ Conheça os caracteres japoneses, memorize todas as 46 letras, escolha entre Hir
 
 ## Installation
 
-Clone o Repositório com `git clone com https://github.com/Leojunkes/telas `.
+Clone o Repositório com `git clone com https://github.com/Leojunkes/Nihongo `.
 
-`cd telas`
+`cd Nihongo`
 `npm start ou yarn start`
 `npx react-native run-android` Emulador Android
 

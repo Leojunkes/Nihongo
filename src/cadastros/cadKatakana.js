@@ -45,7 +45,8 @@ import img44 from '../imagens/katakanaIMG/WO.png';
 import img45 from '../imagens/katakanaIMG/YA.png';
 import img46 from '../imagens/katakanaIMG/YO.png';
 
-const perguntas = [
+var shuffle = require('shuffle-array'),
+  perguntas = [
   {
     questaoImg:img1,//A
     respostas: [
@@ -417,6 +418,7 @@ const perguntas = [
     } , 
 ];
   
+shuffle(perguntas);
   
 
 
