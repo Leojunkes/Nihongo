@@ -2,6 +2,7 @@ import * as React from 'react';
 import {useState} from 'react';
 import {StyleSheet, View,Image, Text, TextInput, Button  } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import shuffle from 'shuffle-array';
 import perguntas from '../cadastros/cadKatakana';
 
 
@@ -22,7 +23,7 @@ export default function Katakana(props){
             setPontosMostrar(true);
       }
       }
-
+      shuffle(perguntas);
     return(
         <View style={styles.container}>
           
@@ -100,8 +101,8 @@ const styles = StyleSheet.create({
       fontSize:30,
       display:'flex',
       marginTop:50,
-      fontWeight:"bold",
-      color:'#393939'
+      
+      color:'#000000'
     },
     respostaText:{
       height:50,

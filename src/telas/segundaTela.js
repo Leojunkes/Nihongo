@@ -5,6 +5,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import perguntas from '../cadastros/cadHiragana';
 import {AppLoading} from 'expo';
 import {ArchitectsDaughter_400Regular, useFonts} from '@expo-google-fonts/architects-daughter';
+import shuffle from 'shuffle-array';
 
 
 
@@ -30,7 +31,7 @@ export default function Hiragana(props) {
             setPontosMostrar(true);
       }
       }
-
+      shuffle(perguntas);
       
       return (
         <View style={styles.container}>
@@ -116,9 +117,7 @@ pontosTotal:{
   fontSize:30,
   display:'flex',
   marginTop:50,
-  fontWeight:"bold",
-  
-  color:'#393939'
+  color:'#000000'
   
 },
 pontos:{
