@@ -19,6 +19,7 @@ export default function Hiragana(props) {
     const [perguntaAtual, setPerguntaAtual] = React.useState(0);
     const [pontosMostrar, setPontosMostrar] = useState(false);
     const [pontos, setPontos] = useState(0);
+    const [resultadoText, setResultadotext] = useState("");
 
     const handleAnswerOptionClick  = (isCorrect) => {
         if(isCorrect){
@@ -30,6 +31,17 @@ export default function Hiragana(props) {
           }else{
             setPontosMostrar(true);
       }
+      let resultadoText="";
+      if(pontos <=20){
+        resultadoText="Oops, precisa melhorar!"
+      }else if(pontos<=35){
+        resultadoText="Boa! aprendendo hein, mas você pode mais..."
+      }else{
+        resultadoText="Parabéns, ótima pontuação!"
+      }
+      setResultadotext(resultadoText);
+
+
       }
       shuffle(perguntas);
       
@@ -41,6 +53,17 @@ export default function Hiragana(props) {
               <Text style={styles.pontosTotal}>
                 Seus pontos {pontos} de {perguntas.length}
               </Text>
+              <View style={styles.containerResults}>
+                <Text style={styles.resultText}>{resultadoText}</Text>
+              </View>
+              <View style={styles.containerOpcoes}>
+                
+                <TouchableOpacity style={styles.jogarNovamente} 
+                    onPress={()=> {props.navigation.navigate('Home')}}>
+                  <Text style={styles.textJogarNovamente}>Jogar Novamente</Text>
+                </TouchableOpacity>
+                
+              </View>
               
               </View>
             ):(
@@ -103,6 +126,22 @@ perguntaTot:{
   borderRadius:7
   
   },
+  textJogarNovamente:{
+    
+    padding:9,
+    paddingTop:18,
+    color:"lightgray"
+  },
+  containerOpcoes:{
+    width:'37%',
+    height:'20%',
+    backgroundColor:"green",
+    borderRadius:7,
+    marginLeft:'34%',
+    marginBottom:-35,
+    marginTop:8
+    
+  },
   ButtonfinalPoint:{
     justifyContent:"flex-end",
     
@@ -112,18 +151,25 @@ perguntaTot:{
     height:20,
     width:20
   },
+  resultText:{
+    alignSelf:"center",
+    margin:10,
+    fontSize:22
+  },
 
 pontosTotal:{
   fontSize:30,
   display:'flex',
   marginTop:50,
-  color:'#000000'
+  fontFamily:'ArchitectsDaughter_400Regular',
+  color:'black',
+  marginLeft:19,
+  marginTop:15
+  
   
 },
 pontos:{
-  flexDirection:"row",
-  justifyContent:"space-between",
-  height:150,
+  height:260,
   width:'90%',
   marginTop:20,
   borderRadius:8,

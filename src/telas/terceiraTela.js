@@ -11,6 +11,7 @@ export default function Katakana(props){
     const [perguntaAtual, setPerguntaAtual] = React.useState(0);
     const [pontosMostrar, setPontosMostrar] = useState(false);
     const [pontos, setPontos] = useState(0);
+    const [resultadoText, setResultadotext] = useState("");
 
     const handleAnswerOptionClick  = (isCorrect) => {
         if(isCorrect){
@@ -22,6 +23,17 @@ export default function Katakana(props){
           }else{
             setPontosMostrar(true);
       }
+      let resultadoText="";
+      if(pontos <=20){
+        resultadoText="Oops, precisa melhorar!"
+      }else if(pontos<=35){
+        resultadoText="Boa! aprendendo hein, mas você pode mais..."
+      }else{
+        resultadoText="Parabéns, ótima pontuação!"
+      }
+      setResultadotext(resultadoText);
+
+
       }
       shuffle(perguntas);
     return(
@@ -32,6 +44,19 @@ export default function Katakana(props){
           <Text style={styles.pontosTotal}>
             Seus pontos {pontos} de {perguntas.length}
           </Text>
+
+          <View style={styles.containerResults}>
+                <Text style={styles.resultText}>{resultadoText}</Text>
+              </View>
+
+              <View style={styles.containerOpcoes}>
+                
+                <TouchableOpacity style={styles.jogarNovamente} 
+                    onPress={()=> {props.navigation.navigate('Home')}}>
+                  <Text style={styles.textJogarNovamente}>Jogar Novamente</Text>
+                </TouchableOpacity>
+                
+              </View>
           
       </View>
       ):(
@@ -72,19 +97,38 @@ const styles = StyleSheet.create({
     marginBottom:0,
     flex:1,
     },
-    pontos:{
-      flexDirection:"row",
-      justifyContent:"space-between",
-      height:150,
-      width:'90%',
-      marginTop:20,
-      
-      borderRadius:8,
-      justifyContent:"center",
-      backgroundColor:'#00fe7e',
-      
+    resultText:{
+      alignSelf:"center",
+      margin:10,
+      fontSize:22
+    },
+    textJogarNovamente:{
+    
+      padding:9,
+      paddingTop:18,
+      color:"lightgray"
+    },
+    containerOpcoes:{
+      width:'37%',
+      height:'20%',
+      backgroundColor:"green",
+      borderRadius:7,
+      marginLeft:'34%',
+      marginBottom:-35,
+      marginTop:25
       
     },
+  
+    pontos:{
+      height:260,
+  width:'90%',
+  marginTop:20,
+  borderRadius:8,
+  justifyContent:"center",
+  backgroundColor:'#00fe7e',
+      
+    },
+    
     perguntaTot:{
     fontSize:23,
     color:'#000000',
@@ -101,8 +145,10 @@ const styles = StyleSheet.create({
       fontSize:30,
       display:'flex',
       marginTop:50,
-      
-      color:'#000000'
+      fontFamily:'ArchitectsDaughter_400Regular',
+      color:'black',
+      marginLeft:19,
+      marginTop:15
     },
     respostaText:{
       height:50,

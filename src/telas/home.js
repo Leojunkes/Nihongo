@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {StyleSheet, View, Text, Button  } from 'react-native';
+import {StyleSheet, View, Text, Button, Image  } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import {ArchitectsDaughter_400Regular, useFonts} from '@expo-google-fonts/architects-daughter';
 
@@ -11,7 +11,9 @@ export default function Home(props){
       });
 
     return(
+        
         <View style={styles.container}>
+            
             <Text style={styles.nomeAppText}>NIHONGO</Text>
             
         <Text style={styles.welcome}>Escolha qual alfabeto você quer aprender hoje : </Text>
