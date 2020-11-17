@@ -2,6 +2,7 @@ import * as React from 'react';
 import {StyleSheet, View, Text, Button, Image  } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import {ArchitectsDaughter_400Regular, useFonts} from '@expo-google-fonts/architects-daughter';
+import { color } from 'react-native-reanimated';
 
 
 
@@ -25,13 +26,22 @@ export default function Home(props){
            >
                 <Text style={styles.textHira}>Hiragana</Text>
            </TouchableOpacity>
-            
-            <TouchableOpacity style={styles.button} onPress={()=> {props.navigation.navigate('Katakana')}}> 
+
+           <TouchableOpacity style={styles.button} onPress={()=> {props.navigation.navigate('Katakana')}}> 
             <Text style={styles.textHira}>Katakana</Text>
-                
-                
-            </TouchableOpacity>
+           </TouchableOpacity>
             
+        </View>
+        
+        <View style={styles.containerEstudar}>
+        <TouchableOpacity style={styles.estudosButton} onPress={()=>{props.navigation.navigate('EstudosHira')}}>
+                <Text style={styles.textHira1}>Estudar</Text>
+           </TouchableOpacity>
+        
+           <TouchableOpacity style={styles.estudosButton1} onPress={()=>{props.navigation.navigate('EstudosKata')}}>
+                <Text style={styles.textHira1}>Estudar</Text>
+           </TouchableOpacity>
+        
         </View>
         
         
@@ -59,11 +69,42 @@ textHira:{
     fontSize:24,
     fontWeight:"bold",
 },
+textHira1:{
+    fontWeight:"bold",
+    fontSize:19,
+    marginLeft:12,
+    color:'white',
+    
+},
     containerButton:{
         flexDirection:'row',
         marginTop:40,
         justifyContent:"space-between",
         
+    },
+    containerEstudar:{
+        flexDirection:'row',
+        marginTop:-45,
+        justifyContent:"space-between",
+        
+    },
+    estudosButton:{
+        height:50,
+        width:90,
+        backgroundColor:'#c91719',
+        justifyContent:"center",
+        margin:10,
+        borderRadius:8,
+        marginRight:70
+        
+    },
+    estudosButton1:{
+        height:50,
+        width:90,
+        backgroundColor:'#c91719',
+        justifyContent:"center",
+        margin:10,
+        borderRadius:8,
     },
     welcome:{
         fontSize:25,
@@ -87,6 +128,8 @@ textHira:{
         justifyContent:'space-between',
 
     },
+    
+    
     
 })
 

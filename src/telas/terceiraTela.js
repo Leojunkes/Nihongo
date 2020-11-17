@@ -4,7 +4,8 @@ import {StyleSheet, View,Image, Text, TextInput, Button  } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import shuffle from 'shuffle-array';
 import perguntas from '../cadastros/cadKatakana';
-
+import {ArchitectsDaughter_400Regular, useFonts} from '@expo-google-fonts/architects-daughter';
+import xis from '../imagens/x.png';
 
 
 export default function Katakana(props){
@@ -25,9 +26,9 @@ export default function Katakana(props){
       }
       let resultadoText="";
       if(pontos <=20){
-        resultadoText="Oops, precisa melhorar!"
+        resultadoText="Oops, precisa melhorar! Volte no menu principal e escolha a opção Estudar"
       }else if(pontos<=35){
-        resultadoText="Boa! aprendendo hein, mas você pode mais..."
+        resultadoText="Boa! aprendendo hein, mas você pode mais...Volte no menu principal e escolha a opção Estudar"
       }else{
         resultadoText="Parabéns, ótima pontuação!"
       }
@@ -61,6 +62,12 @@ export default function Katakana(props){
       </View>
       ):(
         <>
+        <View style={styles.containerXis}>
+                <TouchableOpacity onPress={()=> {props.navigation.navigate('Home')}}>
+                <Image style={styles.imgXis} source={xis} />
+                </TouchableOpacity>
+            </View>
+        
         <View style={styles.pontosTotal1}>
       <Text style={styles.perguntaTot}>
         Pergunta{perguntaAtual +1}/{perguntas.length}
@@ -96,6 +103,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#90ee90',
     marginBottom:0,
     flex:1,
+    },
+    imgXis:{
+      height:26,
+      width:26,
+      marginLeft:330,
+      borderRadius:50,
+    
     },
     resultText:{
       alignSelf:"center",
@@ -146,9 +160,9 @@ const styles = StyleSheet.create({
       display:'flex',
       marginTop:50,
       fontFamily:'ArchitectsDaughter_400Regular',
-      color:'black',
+      color:'#141414',
       marginLeft:19,
-      marginTop:15
+      marginTop:-20
     },
     respostaText:{
       height:50,

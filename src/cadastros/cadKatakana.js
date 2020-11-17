@@ -48,6 +48,7 @@ import img46 from '../imagens/katakanaIMG/YO.png';
 var shuffle = require('shuffle-array'),
   perguntas = [
   {
+    questaoText:'A',
     questaoImg:img1,//A
     respostas: [
       {respostaTexto:'  A', isCorrect:true},
@@ -56,6 +57,7 @@ var shuffle = require('shuffle-array'),
     ],
   },
   {
+    questaoText:'E',
     questaoImg:img2,//E
     respostas: [
       {respostaTexto:'  A', isCorrect:false},
@@ -65,6 +67,7 @@ var shuffle = require('shuffle-array'),
 
   },
   {
+    questaoText:'I',
     questaoImg:img3,//i
     respostas: [
       {respostaTexto:'  I', isCorrect:true},
@@ -73,6 +76,7 @@ var shuffle = require('shuffle-array'),
     ],
   },
   {
+    questaoText:'CHI',
     questaoImg:img4,//CHI
     respostas: [
       {respostaTexto:'  Y', isCorrect:false},
@@ -81,6 +85,7 @@ var shuffle = require('shuffle-array'),
     ],
   },
   {
+    questaoText:'FU',
     questaoImg:img5,//FU
     respostas: [
       {respostaTexto:' FU', isCorrect:true},
@@ -89,6 +94,7 @@ var shuffle = require('shuffle-array'),
     ],
   } ,
   {
+      questaoText:'HA',
       questaoImg:img6,//HA
       respostas: [
         {respostaTexto:'  U', isCorrect:false},
@@ -96,7 +102,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' PA', isCorrect:false},
       ],
     } ,     
-    {
+  {
+     questaoText:'HE',
       questaoImg:img7,//HE
       respostas: [
         {respostaTexto:' HA', isCorrect:false},
@@ -104,7 +111,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' HE', isCorrect:true},
       ],
     } ,     
-    {
+  {
+      questaoText:'HI',
       questaoImg:img8,//HI
       respostas: [
         {respostaTexto:'  C', isCorrect:false},
@@ -112,7 +120,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' PO', isCorrect:false},
       ],
     } ,     
-    {
+  {
+  questaoText:'HO',
       questaoImg:img9,//HO
       respostas: [
         {respostaTexto:' HO', isCorrect:true},
@@ -120,7 +129,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:'  F', isCorrect:false},
       ],
     } ,     
-    {
+  {
+  questaoText:'YU',  
       questaoImg:img10,//YU
       respostas: [
         {respostaTexto:'  U', isCorrect:false},
@@ -128,7 +138,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' BA', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'KA',  
       questaoImg:img11,//Ka
       respostas: [
         {respostaTexto:' GA', isCorrect:false},
@@ -136,7 +147,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:'  P', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'KE',
       questaoImg:img12,//KE
       respostas: [
         {respostaTexto:' KE', isCorrect:true},
@@ -144,7 +156,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' BA', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'KI',  
       questaoImg:img13,//KI
       respostas: [
         {respostaTexto:' KU', isCorrect:false},
@@ -152,7 +165,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' KI', isCorrect:true},
       ],
     } , 
-    {
+  {
+  questaoText:'KO', 
       questaoImg:img14,//KO
       respostas: [
         {respostaTexto:' KO', isCorrect:true},
@@ -160,7 +174,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' BI', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'KU',
       questaoImg:img15,//KU
       respostas: [
         {respostaTexto:' KU', isCorrect:true},
@@ -168,7 +183,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' BA', isCorrect:false},
       ],
     } ,     
-    {
+  {
+  questaoText:'MA',  
       questaoImg:img16,//MA
       respostas: [
         {respostaTexto:'  U', isCorrect:false},
@@ -176,7 +192,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' KA', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'ME', 
       questaoImg:img17,//ME
       respostas: [
         {respostaTexto:' GA', isCorrect:false},
@@ -184,7 +201,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' KA', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'MI',
       questaoImg:img18,//MI
       respostas: [
         {respostaTexto:' MI', isCorrect:true},
@@ -192,7 +210,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' BA', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'MO', 
       questaoImg:img19,//MO
       respostas: [
         {respostaTexto:' JI', isCorrect:false},
@@ -200,7 +219,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' MO', isCorrect:true},
       ],
     } , 
-    {
+  {
+  questaoText:'MU',  
       questaoImg:img20,//MU
       respostas: [
         {respostaTexto:' MI', isCorrect:false},
@@ -208,7 +228,10 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' KE', isCorrect:false},
       ],
     } ,  
-    {
+  
+  
+  {
+      questaoText:'N',
       questaoImg:img21,//N
       respostas: [
         {respostaTexto:' KA', isCorrect:false},
@@ -216,7 +239,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' CI', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'NA',  
       questaoImg:img22,//NA
       respostas: [
         {respostaTexto:' NA', isCorrect:true},
@@ -224,7 +248,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' FU', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'NE',  
       questaoImg:img23,//NE
       respostas: [
         {respostaTexto:' PO', isCorrect:false},
@@ -232,7 +257,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' NE', isCorrect:true},
       ],
     } , 
-    {
+  {
+  questaoText:'NI',  
       questaoImg:img24,//NI
       respostas: [
         {respostaTexto:' GU', isCorrect:false},
@@ -240,7 +266,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' BO', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'NO', 
       questaoImg:img25,//NO
       respostas: [
         {respostaTexto:' NO', isCorrect:true},
@@ -248,7 +275,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' DE', isCorrect:false},
       ],
     } ,   
-    {
+  {
+  questaoText:'NU',  
       questaoImg:img26,//NU
       respostas: [
         {respostaTexto:' CI', isCorrect:false},
@@ -256,7 +284,10 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' BO', isCorrect:false},
       ],
     } , 
-    {
+  
+ 
+  {
+      questaoText:'O',
       questaoImg:img27,//O
       respostas: [
         {respostaTexto:' O', isCorrect:true},
@@ -264,7 +295,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' KO', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'RA',  
       questaoImg:img28,//RA
       respostas: [
         {respostaTexto:' LI', isCorrect:false},
@@ -272,7 +304,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' BE', isCorrect:false},
       ],
     } , 
-    {
+  {
+      questaoText:'RE',  
       questaoImg:img29,//RE
       respostas: [
         {respostaTexto:' PI', isCorrect:false},
@@ -280,7 +313,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' RE', isCorrect:true},
       ],
     } , 
-    {
+  {
+  questaoText:'RI',  
       questaoImg:img30,//RI
       respostas: [
         {respostaTexto:' RI', isCorrect:true},
@@ -288,7 +322,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' CA', isCorrect:false},
       ],
     } ,   
-    {
+  {
+  questaoText:'RO',  
       questaoImg:img31,//RO
       respostas: [
         {respostaTexto:' KU', isCorrect:false},
@@ -296,7 +331,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' JU', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'RU',  
       questaoImg:img32,//RU
       respostas: [
         {respostaTexto:' RU', isCorrect:true},
@@ -304,7 +340,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' BA', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'SA',  
       questaoImg:img33,//SA
       respostas: [
         {respostaTexto:' HU', isCorrect:false},
@@ -312,7 +349,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' BE', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'SE',  
       questaoImg:img34,//SE
       respostas: [
         {respostaTexto:' PA', isCorrect:false},
@@ -320,7 +358,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' SE', isCorrect:true},
       ],
     } , 
-    {
+  {
+  questaoText:'SHI',  
       questaoImg:img35,//SHI
       respostas: [
         {respostaTexto:' LO', isCorrect:false},
@@ -328,7 +367,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' BA', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'SO', 
       questaoImg:img36,//SO
       respostas: [
         {respostaTexto:' LU', isCorrect:false},
@@ -336,7 +376,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' SO', isCorrect:true},
       ],
     } , 
-    {
+  {
+  questaoText:'SU',  
       questaoImg:img37,//SU
       respostas: [
         {respostaTexto:' LI', isCorrect:false},
@@ -344,7 +385,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' CA', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'TA',  
       questaoImg:img38,//TA
       respostas: [
         {respostaTexto:' TA', isCorrect:true},
@@ -352,7 +394,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' HA', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'TE', 
       questaoImg:img39,//TE
       respostas: [
         {respostaTexto:' TE', isCorrect:true},
@@ -360,7 +403,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' JA', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'TO',  
       questaoImg:img40,//TO
       respostas: [
         {respostaTexto:' LI', isCorrect:false},
@@ -368,7 +412,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' FE', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'TSU',  
       questaoImg:img41,//TSU
       respostas: [
         {respostaTexto:' LU', isCorrect:false},
@@ -376,7 +421,10 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' GE', isCorrect:false},
       ],
     } , 
-    {
+  
+ 
+  {
+    questaoText:'U',
       questaoImg:img42,//U
       respostas: [
         {respostaTexto:'  U', isCorrect:true},
@@ -384,7 +432,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' KU', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'WA',  
       questaoImg:img43,//WA
       respostas: [
         {respostaTexto:' LI', isCorrect:false},
@@ -392,7 +441,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' FE', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'WO', 
       questaoImg:img44,//WO
       respostas: [
         {respostaTexto:' HI', isCorrect:false},
@@ -400,7 +450,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' FO', isCorrect:false},
       ],
     } , 
-    {
+  {
+  questaoText:'YA',  
       questaoImg:img45,//YA
       respostas: [
         {respostaTexto:' LI', isCorrect:false},
@@ -408,7 +459,8 @@ var shuffle = require('shuffle-array'),
         {respostaTexto:' YA', isCorrect:true},
       ],
     } , 
-    {
+  {
+  questaoText:'YO',  
       questaoImg:img46,//YO
       respostas: [
         {respostaTexto:' YO', isCorrect:true},

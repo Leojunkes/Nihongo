@@ -6,9 +6,7 @@ import perguntas from '../cadastros/cadHiragana';
 import {AppLoading} from 'expo';
 import {ArchitectsDaughter_400Regular, useFonts} from '@expo-google-fonts/architects-daughter';
 import shuffle from 'shuffle-array';
-
-
-
+import xis from '../imagens/x.png';
 
 export default function Hiragana(props) {
   let [fontsLoaded] = useFonts({
@@ -33,9 +31,9 @@ export default function Hiragana(props) {
       }
       let resultadoText="";
       if(pontos <=20){
-        resultadoText="Oops, precisa melhorar!"
+        resultadoText="Oops, precisa melhorar! Volte no menu principal e escolha a opção Estudar"
       }else if(pontos<=35){
-        resultadoText="Boa! aprendendo hein, mas você pode mais..."
+        resultadoText="Boa! aprendendo hein, mas você pode mais...Volte no menu principal e escolha a opção estudar"
       }else{
         resultadoText="Parabéns, ótima pontuação!"
       }
@@ -68,6 +66,13 @@ export default function Hiragana(props) {
               </View>
             ):(
             <>
+            <View style={styles.containerXis}>
+                <TouchableOpacity onPress={()=> {props.navigation.navigate('Home')}}>
+                <Image style={styles.imgXis} source={xis} />
+                </TouchableOpacity>
+            </View>
+
+
             <View style={styles.pontosTotal1}>
           <Text style={styles.perguntaTot}>
             Pergunta{perguntaAtual +1}/{perguntas.length}
@@ -114,6 +119,14 @@ respostaText:{
   
 
 },
+imgXis:{
+  height:26,
+  width:26,
+  marginLeft:330,
+  borderRadius:50,
+
+},
+
 perguntaTot:{
   fontSize:23,
   color:'#000000',
@@ -127,7 +140,7 @@ perguntaTot:{
   
   },
   textJogarNovamente:{
-    
+    fontSize:14,
     padding:9,
     paddingTop:18,
     color:"lightgray"
@@ -160,11 +173,10 @@ perguntaTot:{
 pontosTotal:{
   fontSize:30,
   display:'flex',
-  marginTop:50,
   fontFamily:'ArchitectsDaughter_400Regular',
   color:'black',
   marginLeft:19,
-  marginTop:15
+  marginTop:-20
   
   
 },
