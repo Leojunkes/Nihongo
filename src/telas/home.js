@@ -2,7 +2,7 @@ import * as React from 'react';
 import {StyleSheet, View, Text, Button, Image  } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import {ArchitectsDaughter_400Regular, useFonts} from '@expo-google-fonts/architects-daughter';
-import { color } from 'react-native-reanimated';
+
 
 
 
@@ -71,7 +71,7 @@ textHira:{
 },
 textHira1:{
     fontWeight:"bold",
-    fontSize:19,
+    fontSize:20,
     marginLeft:12,
     color:'white',
     

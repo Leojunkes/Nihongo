@@ -33,13 +33,13 @@ export default function EstudosHiragana(props){
  
 const s = StyleSheet.create({
     containerQuestaoImg:{
-        marginTop:7
+        marginTop:5
       },
       imagensEstudoHira:{
         width:44,
         height:44,
         marginLeft:10,
-        marginTop:14,
+        marginTop:0,
 
       },
       textImgHira:{
@@ -72,6 +72,7 @@ const s = StyleSheet.create({
         flexDirection:"row",
         flexWrap:"wrap",
         backgroundColor:'#90ee90',
+        marginTop:30
         
       }
 })
